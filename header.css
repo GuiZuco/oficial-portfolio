@@ -1,0 +1,36 @@
+header{
+    background-color: #2e2e2e;
+    justify-content: center;
+    font-weight: 600;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+}
+
+.logo{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    color: #FF5733;
+    transition: 0.5s;
+}
+
+span{
+    color: #FF5733;
+}

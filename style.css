@@ -1,0 +1,83 @@
+body{
+    letter-spacing: 1px;
+    font-family:'Inter', sans-serif;
+    background-color: #2e2e2e;
+}
+
+
+/*PRINCIPAL*/
+
+p{
+    color:#FFFFFF;
+}
+
+h1{
+    color: #FF5733;
+}
+
+.principal p{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.principal h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1em;
+    font-weight: 300;
+    margin: 0.5em 0;
+    white-space: nowrap;
+}
+
+main, .principal{
+    
+}
+
+.principal{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.photo{
+    order: -1;
+    margin: 0 0 2rem;
+    width: 80%;
+    
+}
+
+.second{
+    background-color: #252525;
+}
+
+
+.div-botoes{
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.link-botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    border: 2px solid #FF5733;
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
