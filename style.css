@@ -1,43 +1,88 @@
-body{
-    letter-spacing: 1px;
-    font-family:'Inter', sans-serif;
+body {
     background-color: #2e2e2e;
+    color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
 }
 
-
-/*PRINCIPAL*/
-
-p{
-    color:#FFFFFF;
+header {
+    background-color: #2e2e2e;
+    justify-content: center;
+    font-weight: 600;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
 
-h1{
+nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+}
+
+nav p a {
     color: #FF5733;
 }
 
-.principal p{
-    font-size: 0.8em;
-    font-weight: 100;
+.logo {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    transition: 0.5s;
 }
 
-.principal h1{
-    font-family: 'Poppins', sans-serif;
+.logo:hover {
+    color: #FF5733;
+    transition: 0.5s;
+}
+
+span {
+    color: #FF5733;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*=============== PRINCIPAL =============*/
+
+.principal p {
+    font-size: 0.9em;
+    margin: 1em 0;
+}
+
+.principal h1 {
+    color: #FF5733;
     font-size: 2.1em;
-    font-weight: 300;
-    margin: 0.5em 0;
+    font-family: 'Poppins', sans-serif;
     white-space: nowrap;
 }
 
-main, .principal{
+.conteudo {
+    background-color: #2e2e2e;
+}
+
+.conteudo .principal {
     width: 50%;
-    margin: auto;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.principal{
+.principal {
     font-weight: 300;
     display: flex;
     flex-direction: row;
@@ -46,10 +91,9 @@ main, .principal{
     min-height: 100vh;
     width: 90%;
     margin: auto;
-
 }
 
-.conteudo{
+.texto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,37 +102,38 @@ main, .principal{
     padding: 3em 0;
 }
 
-
-.photo{
+.photo {
     order: -1;
+    width: min(350px, 75vw);
     margin: 0 0 2rem;
-    width: 80%;
-    
 }
 
-.second{
-    background-color: #252525;
+.ui {
+    background-color: #202020;
 }
 
-
-.div-botoes{
-    margin-top: 2em;
+.home-botao {
+    margin-top: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
     font-size: 0.9em;
+    
 }
 
-.link-botao{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 300;
-    border: 2px solid #FF5733;
-    height: 40px;
-    width: 110px;
-    border-radius: 5px;
+.link-botao {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border: 2px solid #FF5733;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.link-botao:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
